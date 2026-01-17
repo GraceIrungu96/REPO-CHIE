@@ -7,7 +7,7 @@ services:
       # Medallion Architecture: Silver Layer credentials
       # This setup helps drive the 70% reduction in data reconciliation incidents.
       - POSTGRES_USER=grace_admin
-      - POSTGRES_PASSWORD=irungu_secure
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - POSTGRES_DB=medallion_warehouse
     ports:
       - "5432:5432"
